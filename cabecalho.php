@@ -16,7 +16,7 @@
 
  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/prestare/index.php">
+    <a class="navbar-item" href="index.php">
      <h1 class="is-size-1" style="font-family: 'Engagement', cursive;">Prestare</h1>
     </a>
 
