@@ -1,12 +1,16 @@
 <?php
-
-
-echo "<table  class='table is-striped' >";
+error_reporting(0);
+require_once('verifica_login.php');
+session_start();
+?>
+<?php
+echo "<table  class='table is-striped is-narrow is-hoverable is-bordered' >";
 echo"
 <thead>
 <tr>
 <th> Usuário </th>
 <th> Login </th>
+<th> Senha </th>
 </tr>
 </thead>
 ";
@@ -14,9 +18,7 @@ $conexao = mysqli_connect('localhost', 'root', '', 'prestare') or die('Erro no b
 
 $sql = "select * from pessoas";
 
-
 $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');
-
 
 while ($registro = mysqli_fetch_array($resultado))
 {
@@ -30,10 +32,7 @@ while ($registro = mysqli_fetch_array($resultado))
   echo "</tr>";
 }
 
-
-
 mysqli_close($conexao);
 echo "</table>";
-
 
 ?>
