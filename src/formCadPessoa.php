@@ -29,7 +29,7 @@
                 <img src="assets/profile.png" alt="img" style="max-width: 400px; ">
               </div>
               <div class="column is-4 is-offset-0">
-                <form action="cadastraPessoa.php" method="POST" style="has-text-centered">
+                <form action="cadastraPessoa.php" method="POST" class="has-text-centered">
                   <div class="field">
                     <label class="label">Nome</label>
                     <div class="control">
