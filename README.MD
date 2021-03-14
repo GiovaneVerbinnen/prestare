@@ -2,7 +2,9 @@
 ![Prestare](./src/assets/home_prestare.png)
 ### Projeto em PHP de controle de objetos emprestados.
 
-- usa PHP + Mysql
-
+- Tecnologias 
+    - PHP
+    - Mysql
+    - Bulma CSS Framework
 
 
