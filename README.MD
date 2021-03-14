@@ -7,4 +7,6 @@
     - Mysql
     - Bulma CSS Framework
 
+`Sistema feito com objetivo de treinar meu código em PHP, implementar padrões e bons costumes de codificação!`
+
 Live Link Heroku: https://prestare.herokuapp.com/
