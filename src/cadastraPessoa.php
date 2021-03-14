@@ -5,15 +5,17 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="2;url=index.php">
-    <title>Prestare - Cadastro </title>
-    <link rel="stylesheet" href="./assets/bulma.min.css">
-  </head>
-  <body>
-<?php
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="2;url=index.php">
+  <title>Prestare - Cadastro </title>
+  <link rel="stylesheet" href="./assets/bulma.min.css">
+</head>
+
+<body>
+  <?php
 
   echo "<h1 class='is-size-3'>Redirecionando...</h1>";
 
@@ -30,11 +32,11 @@ session_start();
 
   $get_rows = mysqli_affected_rows($conexao);
 
-  if($get_rows >=1){
-    echo'<h1 class="is-size-3">Usuário já existe!</h1> <br />
+  if ($get_rows >= 1) {
+    echo '<h1 class="is-size-3">Usuário já existe!</h1> <br />
     <a class="button is-block is-warning  " href="index.php" >Voltar</a>';
     die();
-    }
+  }
   // Cadastra User
   $sql = "INSERT INTO pessoas (userName , userLogin, userPassword) VALUES";
   $sql .= "('$name', '$login', '$password')";
@@ -46,7 +48,8 @@ session_start();
   <a class="button is-warning  " href="index.php" >Voltar</a>';
 
   mysqli_close($conexao);
-?>
-</script>
+  ?>
+  </script>
 </body>
+
 </html>

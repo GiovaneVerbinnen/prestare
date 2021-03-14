@@ -5,7 +5,7 @@ session_start();
 ?>
 <?php
 echo "<table  class='table is-striped is-narrow is-hoverable is-bordered' >";
-echo"
+echo "
 <thead>
 <tr>
 <th> Usuário </th>
@@ -20,15 +20,14 @@ $sql = "select * from pessoas";
 
 $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');
 
-while ($registro = mysqli_fetch_array($resultado))
-{
+while ($registro = mysqli_fetch_array($resultado)) {
   $nome = $registro['userName'];
   $login = $registro['userLogin'];
   $password = $registro['userPassword'];
   echo "<tr>";
-  echo "<td>"."$nome"."</td>";
-  echo "<td>"."$login"."</td>";
-  echo "<td>"."$password"."</td>";
+  echo "<td>" . "$nome" . "</td>";
+  echo "<td>" . "$login" . "</td>";
+  echo "<td>" . "$password" . "</td>";
   echo "</tr>";
 }
 

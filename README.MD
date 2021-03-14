@@ -1,12 +1,8 @@
-  # PRESTARE v0.5.0
+# PRESTARE v0.5.0
+![Prestare](./src/assets/home_prestare.png)
+### Projeto em PHP de controle de objetos emprestados.
 
- ### Projeto em PHP de controle de objetos emprestados.
-
- - usa PHP + mysql
-
-   
-  usuário admin
-  senha   admin
+- usa PHP + Mysql
 
 
 
