@@ -17,8 +17,8 @@ echo "
     </thead>
 ";
 
-$conexao = mysqli_connect('localhost', 'root', '', 'prestare') or die('Erro no banco de dados');
-
+// $conexao = mysqli_connect('localhost', 'root', '', 'prestare') or die('Erro no banco de dados');
+$conexao = require_once('conectaBanco.php');
 $sql = "select * from itens";
 
 $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');

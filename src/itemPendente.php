@@ -24,8 +24,8 @@ require('cabecalho.php');
         </tr>
       </thead>";
 
-    $conexao = mysqli_connect('localhost', 'root', '', 'prestare') or die('Erro no banco de dados');
-
+    // $conexao = mysqli_connect('localhost', 'root', '', 'prestare') or die('Erro no banco de dados');
+    $conexao = require_once('conectaBanco.php');
     $sql = "select * from itens where data_devolucao = '0000-00-00 00:00:00.000000'";
 
     $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');
