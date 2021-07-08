@@ -25,14 +25,14 @@ session_start();
             <h1 class="title has-text-grey-dark " style="font-size:5rem;font-family: 'Engagement', cursive;">login</h1>
             <hr>
             <?php
-            if (isset($_SESSION['nao_autenticado'])) :
+            // if (isset($_SESSION['nao_autenticado'])) :
             ?>
-              <div class="notification is-danger">
-                <p>ERRO: Usuário ou senha inválidos.</p>
-              </div>
+            <div class="notification is-danger">
+              <!-- <p>ERRO: Usuário ou senha inválidos.</p> -->
+            </div>
             <?php
-            endif;
-            unset($_SESSION['nao_autenticado']);
+            // endif;
+            // unset($_SESSION['nao_autenticado']);
             ?>
             <div class="columns">
               <div class="column">
