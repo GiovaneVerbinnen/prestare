@@ -24,8 +24,8 @@ require('cabecalho.php');
         </tr>
       </thead>";
 
-    // $conexao = mysqli_connect('localhost', 'root', '', 'prestare') or die('Erro no banco de dados');
-    $conexao = mysqli_connect('localhost', 'root', 'R64S1m/JVu947bye', 'prestare') or die('Não conseguimos conectar no banco de dados!');
+    // //$conexao = mysqli_connect()('localhost', 'root', '', 'prestare') or die('Erro no banco de dados');
+    //$conexao = mysqli_connect()('localhost', 'root', 'R64S1m/JVu947bye', 'prestare') or die('Não conseguimos conectar no banco de dados!');
     $sql = "select * from itens where data_devolucao = '0000-00-00 00:00:00.000000'";
 
     $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');
@@ -58,7 +58,7 @@ require('cabecalho.php');
       echo "</tr>";
     }
 
-    mysqli_close($conexao);
+    // mysqli_close($conexao);
     echo "</table>";
 
     ?>

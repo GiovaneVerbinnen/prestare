@@ -19,7 +19,7 @@ session_start();
 
   echo "<h1 class='is-size-3'>Redirecionando...</h1>";
 
-  $conexao = mysqli_connect('localhost', 'root', '', 'prestare');
+  //$conexao = mysqli_connect()('localhost', 'root', '', 'prestare');
 
   $name = $_POST["name"];
   $login = $_POST["login"];
@@ -47,7 +47,7 @@ session_start();
   echo 'Cliente cadastrado com sucesso! <br />
   <a class="button is-warning  " href="index.php" >Voltar</a>';
 
-  mysqli_close($conexao);
+  // mysqli_close($conexao);
   ?>
   </script>
 </body>

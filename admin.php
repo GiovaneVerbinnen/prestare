@@ -20,7 +20,7 @@ if ($_SESSION['usuario'] != 'admin') {
               $sql = "select * from pessoas";
               $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');
               echo mysqli_num_rows($resultado);
-              mysqli_close($conexao);
+              // mysqli_close($conexao);
               ?>
             </p>
           </div>
@@ -34,7 +34,7 @@ if ($_SESSION['usuario'] != 'admin') {
               $sql = "select * from itens";
               $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');
               echo mysqli_num_rows($resultado);
-              mysqli_close($conexao);
+              // mysqli_close($conexao);
               ?>
             </p>
           </div>
@@ -49,7 +49,7 @@ if ($_SESSION['usuario'] != 'admin') {
               $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');
               echo mysqli_num_rows($resultado);
 
-              mysqli_close($conexao);
+              // mysqli_close($conexao);
               ?>
             </p>
           </div>
@@ -63,7 +63,7 @@ if ($_SESSION['usuario'] != 'admin') {
               $sql = "select * from itens where data_devolucao <> '0000-00-00 00:00:00.000000'";
               $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');
               echo mysqli_num_rows($resultado);
-              mysqli_close($conexao);
+              // mysqli_close($conexao);
               ?>
             </p>
           </div>

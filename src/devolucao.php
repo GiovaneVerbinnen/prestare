@@ -21,7 +21,7 @@
           echo '<h1 class="is-size-3 has-text-danger">Redirecionando...</h1> <br />
             <progress class="progress is-small is-primary" max="100">20%</progress>';
 
-          $conexao = mysqli_connect('localhost', 'root', '', 'prestare');
+          //$conexao = mysqli_connect()('localhost', 'root', '', 'prestare');
 
           if ($data == '0000-00-00 00:00:00.000000') {
             $sql = "UPDATE itens set data_devolucao=NOW() where item_id='$item'";
@@ -41,7 +41,7 @@
           } else {
             echo '<h1 class="is-size-3">Item já Devolvido.</h1> <br />';
           }
-          mysqli_close($conexao);
+          // mysqli_close($conexao);
 
           ?>
         </div>

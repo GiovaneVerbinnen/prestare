@@ -22,7 +22,7 @@ session_start();
   echo '<h1 class="is-size-5">Redirecionando...</h1> <br />
      <progress class="progress is-small is-primary" max="100">20%</progress>';
 
-  $conexao = mysqli_connect('localhost', 'root', '', 'prestare');
+  //$conexao = mysqli_connect()('localhost', 'root', '', 'prestare');
 
   $item = $_POST["item"];
   $mutuario = $_POST["mutuario"];
@@ -43,7 +43,7 @@ session_start();
 
   echo 'Alterado com sucesso! <br />
     <a class="button is-warning" href="index.php" >Voltar</a>';
-  mysqli_close($conexao);
+  // mysqli_close($conexao);
   ?>
 </body>
 

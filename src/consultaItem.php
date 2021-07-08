@@ -17,8 +17,8 @@ echo "
     </thead>
 ";
 
-// $conexao = mysqli_connect('localhost', 'root', '', 'prestare') or die('Erro no banco de dados');
-$conexao = mysqli_connect('localhost', 'root', 'R64S1m/JVu947bye', 'prestare') or die('Não conseguimos conectar no banco de dados!');
+// //$conexao = mysqli_connect()('localhost', 'root', '', 'prestare') or die('Erro no banco de dados');
+//$conexao = mysqli_connect()('localhost', 'root', 'R64S1m/JVu947bye', 'prestare') or die('Não conseguimos conectar no banco de dados!');
 $sql = "select * from itens";
 
 $resultado = mysqli_query($conexao, $sql) or die('Não foi possível realizar consulta');
@@ -57,7 +57,7 @@ while ($registro = mysqli_fetch_array($resultado)) {
   echo "</tr>";
 }
 
-mysqli_close($conexao);
+// mysqli_close($conexao);
 echo "</table></div>";
 
 ?>

@@ -31,7 +31,7 @@ require('cabecalho.php');
                                                                                     $resultado = mysqli_query($conexao, $sql) or die("Não foi possível realizar consulta");
                                                                                     $obj = mysqli_fetch_object($resultado);
                                                                                     echo $obj->userID;
-                                                                                    mysqli_close($conexao);
+                                                                                    // mysqli_close($conexao);
                                                                                     ?>">
             </div>
           </div>
@@ -45,7 +45,7 @@ require('cabecalho.php');
                                                                                       $resultado = mysqli_query($conexao, $sql) or die("Não foi possível realizar consulta");
                                                                                       $obj = mysqli_fetch_object($resultado);
                                                                                       echo $obj->userName;
-                                                                                      mysqli_close($conexao);
+                                                                                      // mysqli_close($conexao);
                                                                                       ?>">
             </div>
           </div>
@@ -59,7 +59,7 @@ require('cabecalho.php');
                                                                                         $resultado = mysqli_query($conexao, $sql) or die("Não foi possível realizar consulta");
                                                                                         $obj = mysqli_fetch_object($resultado);
                                                                                         echo $obj->userLogin;
-                                                                                        mysqli_close($conexao);
+                                                                                        // mysqli_close($conexao);
                                                                                         ?>">
             </div>
           </div>
